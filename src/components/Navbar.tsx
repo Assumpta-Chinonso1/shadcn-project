@@ -1,4 +1,4 @@
-import { LogOut, Moon, Settings, User } from "lucide-react"
+import { LogOut, Moon, Settings, SquareMenu, User } from "lucide-react"
 import Link from "next/link"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -54,6 +54,23 @@ const Navbar = () => {
       </DropdownMenuItem>
      
     </DropdownMenuGroup>
+  </DropdownMenuContent>
+</DropdownMenu>
+
+
+<DropdownMenu>
+  <DropdownMenuTrigger asChild>
+    <Button variant="outline" size="icon">
+        <SquareMenu/>
+        <span className="sr-only">Open Menu</span>
+
+    </Button>
+  </DropdownMenuTrigger>
+  <DropdownMenuContent>
+  
+      <DropdownMenuLabel>Menu Item 1</DropdownMenuLabel>
+      <DropdownMenuItem>Menu Item 2</DropdownMenuItem>
+      <DropdownMenuItem>Menu Item 3</DropdownMenuItem>  
   </DropdownMenuContent>
 </DropdownMenu>
         </div>
