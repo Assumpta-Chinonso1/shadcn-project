@@ -4,6 +4,7 @@ import "./globals.css";
 import AppSideBar from "@/components/AppSideBar";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 
 const geistSans = Geist({
@@ -38,8 +39,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange>
 
-     
-        <AppSideBar/>
+       <SidebarProvider>
+       <AppSideBar/>
         <main className="w-full">
          
          <Navbar/>
@@ -48,8 +49,10 @@ export default function RootLayout({
         {children}
                  
         </div>
-
-        </main>
+                </main>
+       </SidebarProvider>
+       
+       
           </ThemeProvider>
       </body>
     </html>
