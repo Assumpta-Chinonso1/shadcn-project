@@ -88,7 +88,7 @@ const Navbar = () => {
 </DropdownMenu>
 
 
-<DropdownMenu>
+{/*<DropdownMenu>
   <DropdownMenuTrigger asChild>
     <Button variant="outline" size="icon">
         <SquareMenu/>
@@ -102,7 +102,7 @@ const Navbar = () => {
       <DropdownMenuItem>Menu Item 2</DropdownMenuItem>
       <DropdownMenuItem>Menu Item 3</DropdownMenuItem>  
   </DropdownMenuContent>
-</DropdownMenu>
+</DropdownMenu>*/}
         </div>
            
              </nav>
