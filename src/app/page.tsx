@@ -1,6 +1,10 @@
 ///import { Button } from "@/components/ui/button"
 //import { CirclePlus } from "lucide-react"
 
+import AppAreaChart from "@/components/AppAreaChart"
+import AppBarChart from "@/components/AppBarChart"
+import AppPieChart from "@/components/AppPieChart"
+
 
 
 const HomePage = () => {
@@ -14,11 +18,18 @@ const HomePage = () => {
       <Button  size="xl" className="rounded-full text-custom-color "> <CirclePlus/> Click Me</Button>
     </div>*/}
 
-    <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 ">Test</div>
-        <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-2 2xl:col-span-2">Test</div>
-            <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
-                <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 ">Test</div>
-                    <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 ">Test</div>
+    <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-2 2xl:col-span-2 ">
+      <AppBarChart/>
+    </div>
+     <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+                <div className="bg-primary-foreground p-4 rounded-lg ">
+                  <AppPieChart/>
+                </div>
+        <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+           
+                    <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 ">
+                      <AppAreaChart/>
+                    </div>
                         <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
     
   
