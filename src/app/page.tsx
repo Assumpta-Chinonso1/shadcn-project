@@ -4,6 +4,8 @@
 import AppAreaChart from "@/components/AppAreaChart"
 import AppBarChart from "@/components/AppBarChart"
 import AppPieChart from "@/components/AppPieChart"
+import CardLists from "@/components/CardLists"
+import TodoLists from "@/components/TodoLists"
 
 
 
@@ -21,17 +23,31 @@ const HomePage = () => {
     <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 xl:col-span-2 2xl:col-span-2 ">
       <AppBarChart/>
     </div>
-     <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+    <div className="bg-primary-foreground p-4 rounded-lg">
+          <CardLists title="Latest Transactions"/>
+        </div>
+     
                 <div className="bg-primary-foreground p-4 rounded-lg ">
                   <AppPieChart/>
                 </div>
-        <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+        
+        <div className="bg-primary-foreground p-4 rounded-lg">
+      <TodoLists/>
+     </div>
            
                     <div className="bg-primary-foreground p-4 rounded-lg lg:col-span-2 ">
                       <AppAreaChart/>
                     </div>
-                        <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
-    
+                        <div className="bg-primary-foreground p-4 rounded-lg">
+                          <CardLists title="Top Subscribers"/>
+                        </div>
+                        <div className="bg-primary-foreground p-4 rounded-lg">
+                          
+                              
+                                  <CardLists title="Popular Content"/>
+
+                        </div>
+ 
   
     </div>
   )
