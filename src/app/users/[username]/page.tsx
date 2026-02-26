@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import EditUser from "@/components/EditUser"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import AppLineChart from "@/components/AppLineChart"
 
 const SingleUserPage = () => {
     return(
@@ -134,10 +136,29 @@ const SingleUserPage = () => {
                         <div className="w-full xl:w-2/3 space-y-6">
 
                         {/*User card container*/}
-                        <div className="bg-primary-foreground p-4 rounded-lg">User Card</div>
+                        <div className="bg-primary-foreground p-4 rounded-lg space-y-2">
+                            <div className="flex items-center gap-2">
+                                <Avatar className="size-12">
+                                    <AvatarImage src="https://avatars.githubusercontent.com/u/1486366" />
+                                    <AvatarFallback>AD</AvatarFallback>
+                                </Avatar>
+                                <h1 className="text-sm font-semibold">Assum Dev</h1>
+                                 </div>
+                                <p className="text-sm text-muted-foreground">
+                                    Overseeing system performance and user management.
+                             Ensuring smooth workflows across teams and operations.
+                            Monitoring activity to maintain stability and reliability.
+                                Improving processes with structure and clear organization.
+                          Focused on efficiency, clarity, and long-term scalability.
+                                </p>
+                           
+                        </div>
 
                         {/*Chart Container*/}
-                        <div className="bg-primary-foreground p-4 rounded-lg">Chart</div>
+                        <div className="bg-primary-foreground p-4 rounded-lg">
+                            <h1 className="text-xl font-semibold"> User Activity</h1>
+                            <AppLineChart/>
+                        </div>
 
                         </div>
                        </div>                      
