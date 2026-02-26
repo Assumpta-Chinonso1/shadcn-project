@@ -19,10 +19,14 @@ export const columns: ColumnDef<Payment>[] = [
     {
          id: "select",
          header: ({table}) => (
-            <Checkbox/>
+            <Checkbox 
+            onCheckedChange={(value)=> table.toggleAllPageRowsSelected(!!value)} 
+            checked={table.getIsAllPageRowsSelected() || (table.getIsSomePageRowsSelected() && "indeterminate")}/>
          ),
          cell:({row}) => (
-            <Checkbox/>
+            <Checkbox 
+            onCheckedChange={(value)=> row.toggleSelected(!!value)} 
+            checked={row.getIsSelected()}/>
          )
     },
 
